@@ -42,6 +42,11 @@ hide_output sudo apt -y upgrade
 hide_output sudo apt -y autoremove
 apt_install software-properties-common
 
+if [ "`lsb_release -d | sed 's/.*:\s*//' | sed 's/22\.04\.[0-9]/22.04/' `" == "Ubuntu 22.04 LTS" ]; then
+  DISTRO=22
+  sudo chmod g-w /etc /etc/default /usr
+fi
+
 DISTRO='"${DISTRO}"'
 
 if [[ ("$DISTRO" == "22") ]]; then
