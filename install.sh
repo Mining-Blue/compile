@@ -1,6 +1,6 @@
 #!/bin/bash
 
-script_version='v0.3-8.2'
+script_version='v0.1'
 output() {
 printf "\E[0;33;40m"
 echo $1
