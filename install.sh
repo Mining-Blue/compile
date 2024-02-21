@@ -34,7 +34,7 @@ sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/
 
 hide_output sudo apt -y upgrade
 hide_output sudo apt -y autoremove
-apt_install software-properties-common
+apt_install software-properties-common net-tools
 
 # Installing packages to compile crypto currency:
 echo
