@@ -52,6 +52,14 @@ apt_install libssh-dev libbrotli-dev
 hide_output sudo add-apt-repository -y ppa:luke-jr/bitcoincore
 hide_output sudo apt -y update
 apt_install libdb4.8-dev libdb4.8++-dev libdb5.3 libdb5.3++
+
+apt_install gcc-10 g++-10 -y
+hide_output sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 10
+hide_output sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 11
+hide_output sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-10 10
+hide_output sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 11
+hide_output sudo update-alternatives --set gcc /usr/bin/gcc-10
+hide_output sudo update-alternatives --set g++ /usr/bin/g++-10 
 else
         echo -e "$RED Aborting, wrong O/S. Must be Ubuntu 22.04."
         exit 1
