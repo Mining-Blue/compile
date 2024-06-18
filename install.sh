@@ -25,7 +25,7 @@ figlet -f slant -w 100 "Saltpool Crypto Compiler" | lolcat -f
 echo
 echo -e "$GREEN************************************************************************$COL_RESET"
 echo -e "$GREEN Crypto Compiler Install Script $script_version $COL_RESET"
-echo -e "$GREEN Operating Systems: Ubuntu 22.04  or 24.04 $COL_RESET"
+echo -e "$GREEN Operating Systems: Ubuntu 22.04 or 24.04 $COL_RESET"
 echo -e "$GREEN************************************************************************$COL_RESET"
 echo
 sleep 3
