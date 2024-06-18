@@ -42,7 +42,7 @@ echo
 echo -e "$CYAN => Installing Package to compile crypto currency $COL_RESET"
 sleep 3
 
-os_version = "`lsb_release -d | sed 's/.*:\s*//' | sed 's/22\.04\.[0-9]/22.04/' |  sed 's/24\.04\.[0-9]/24.04/'`"
+os_version="`lsb_release -d | sed 's/.*:\s*//' | sed 's/22\.04\.[0-9]/22.04/' |  sed 's/24\.04\.[0-9]/24.04/'`"
 
 if [ "$os_version" == "Ubuntu 22.04 LTS" ] || [ "$os_version" == "Ubuntu 24.04 LTS" ]; then
 apt_install software-properties-common build-essential
